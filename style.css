@@ -8,23 +8,87 @@
     height: 100vh;
     background-color: aquamarine;
 }
+
+
+
+
+
+
+.hd-sec {
+    border: 1px solid #000;
+}
+/*-------------hd----------*/
 #hd {
     width: 100vw;
     height: 10vh;
-    background-color: coral;
+    background-color: coral; 
+    display: flex;
+
+}
+#hd-1 {
+    width: 20vw;
+    height: 10vh;
+
+}
+#hd-2 {
+    width: 50vw;
+    height: 10vh;
+
+}
+#hd-3 {
+    width: 30vw;
+    height: 10vh;
 
 }
 
+/*---------------mn------------*/
 #mn {
     width: 100vw;
     height: 80vh;
     background-color: brown;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "mn-1 mn-4"
+    "mn-2 mn-4"
+    "mn-3 mn-4"
+    ; 
+    gap: 1vh;
 
 }
+#mn-1 {
+    grid-area: mn-1;
 
+}
+#mn-2 {
+    grid-area: mn-2;
+
+}
+#mn-3 {
+    grid-area: mn-3;
+
+}
+#mn-4 {
+    grid-area: mn-4;
+
+}
+/*-----------ft------*/
 #ft {
     width: 100vw;
     height: 10vh;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+#ft-1 {
+
+    flex: 1;
+}
+
+#ft-2 {
+    flex: 1;
 
 }
