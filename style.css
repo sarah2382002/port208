@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#big__box {
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+#hd {
+    width: 100vw;
+    height: 10vh;
+    background-color: coral;
+
+}
+
+#mn {
+    width: 100vw;
+    height: 80vh;
+    background-color: brown;
+
+}
+
+#ft {
+    width: 100vw;
+    height: 10vh;
+    background-color: blue;
+
+}
