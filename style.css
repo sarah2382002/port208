@@ -1,3 +1,5 @@
+@media only screen and (min-width: 999px) {
+
 *{
     padding: 0px;
     margin: 0px;
@@ -14,81 +16,429 @@
 
 
 
-.hd-sec {
-    border: 1px solid #000;
-}
+
 /*-------------hd----------*/
 #hd {
     width: 100vw;
     height: 10vh;
-    background-color: coral; 
+    background-color:orangered;
     display: flex;
+    
 
 }
 #hd-1 {
     width: 20vw;
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 #hd-2 {
     width: 50vw;
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    
 
 }
 #hd-3 {
     width: 30vw;
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 
+
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+}
+
+#nav__list {
+    list-style: none;
+    
+    display: flex;
+    gap: 2vw;
+    font-size: 24px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#icons {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    gap: 1cm;
+    
+    
+    
+    
+}
+
+#fb {
+    width: 30px;
+    height: 30px;
+}
+
+#in {
+    width: 30px;
+    height: 30px;
+}
+
+#wh {
+    width: 30px;
+    height: 30px;
 }
 
 /*---------------mn------------*/
 #mn {
     width: 100vw;
-    height: 80vh;
-    background-color: brown;
+    height: 85vh;
+    background-color:white;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
+    "mn-1 mn-3"
     "mn-1 mn-4"
-    "mn-2 mn-4"
-    "mn-3 mn-4"
+    "mn-2 mn-5"
     ; 
     gap: 1vh;
+    background-image: url(/images/blue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 #mn-1 {
     grid-area: mn-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 #mn-2 {
     grid-area: mn-2;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+    
+
+    
+
 
 }
 #mn-3 {
     grid-area: mn-3;
+    color: white;
+    font-size: 15px;
 
 }
 #mn-4 {
     grid-area: mn-4;
+    color: white;
+    font-size: 15px;
 
+
+}
+#mn-5 {
+    grid-area: mn-5;
+    color: white;
+    font-size: 15px;
+}
+
+#me {
+    width: 250px;
+    height: 250px;
+    border-radius: 100px;
+
+}
+
+#ed {
+    background-color:orangered;
+    border: solid black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#va {
+    background-color:orangered;
+    border: solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#sk {
+    background-color:orangered;;
+    border: solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /*-----------ft------*/
 #ft {
     width: 100vw;
-    height: 10vh;
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
+    height: 5vh;
+    background-color:orangered;;
     
-
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
 }
 #ft-1 {
+    text-align: center;
+    font-size: 6px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+}
+    
 
-    flex: 1;
+
+ /*----------small screen---------*/
+@media only screen and (min-width: 375px) and (max-width: 699px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    #big__box {
+        width: 100vw;
+        height:auto;
+        background-color: aquamarine;
+    }
+    
+    
+    /*-------------hd----------*/
+    #hd {
+        width: 100vw;
+        height: 20vh;
+        background-color:orangered;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    #hd-1 {
+        width: 20vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    #hd-2 {
+        width: 50vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        
+        
+    
+    }
+    #hd-3 {
+        width: 30vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    
+    
+    }
+    
+    #logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+    }
+    
+    #nav__list {
+        list-style: none;
+        
+        display: flex;
+        gap: 2vw;
+        font-size: 8px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    #icons {
+        display: flex;
+        width: 5px;
+        height: 5px;
+        gap: 1cm;
+        
+        text-decoration: none;
+        
+        
+        
+        
+    }
+    
+    #fb {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #in {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #wh {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /*---------------mn------------*/
+    #mn {
+        width: 100vw;
+        height: 85vh;
+        background-color:white;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "mn-1"
+        "mn-1"
+        "mn-2"
+        "mn-3"
+        "mn-4"
+        "mn-5"
+
+        
+        ; 
+        gap: 1vh;
+        background-image: url(/images/blue.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    #mn-1 {
+        grid-area: mn-1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    #mn-2 {
+        grid-area: mn-2;
+        text-align: center;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 10px;
+    
+        
+        
+    
+        
+    
+    
+    }
+    #mn-3 {
+        grid-area: mn-3;
+        color: white;
+        font-size: 10px;
+    
+    }
+    #mn-4 {
+        grid-area: mn-4;
+        color: white;
+        font-size: 10px;
+    
+    
+    }
+    #mn-5 {
+        grid-area: mn-5;
+        color: white;
+        font-size: 10px;
+    }
+    
+    #me {
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+    
+    }
+    
+    #ed {
+        background-color:orangered;
+        border: solid black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+    
+    #va {
+        background-color:orangered;
+        border: solid black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+    
+    #sk {
+        background-color:orangered;;
+        border: solid black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+    /*-----------ft------*/
+    #ft {
+        width: 100vw;
+        height: 5vh;
+        background-color:orangered;;
+        
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #ft-1 {
+        text-align: center;
+        font-size: 6px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
-#ft-2 {
-    flex: 1;
 
-}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
